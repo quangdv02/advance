@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SM_Customrouter>
+            <version>0.1.0</version>
+        </SM_Customrouter>
+    </modules>
+    <global>
+        <blocks>
+            <customrouter>
+                <class>SM_Customrouter_Block</class>
+            </customrouter>
+        </blocks>
+        <helpers>
+            <customrouter>
+                <class>SM_Customrouter_Helper</class>
+            </customrouter>
+        </helpers>
+    </global>
+    <default>
+        <web>
+            <routers>
+                <products>
+                    <area>frontend</area>
+                    <class>SM_Customrouter_Controller_Router</class>
+                </products>
+            </routers>
+        </web>
+    </default>
+</config>
