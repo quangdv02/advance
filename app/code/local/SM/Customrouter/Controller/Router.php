@@ -12,10 +12,10 @@ class SM_Customrouter_Controller_Router extends Mage_Core_Controller_Varien_Rout
         $sku = substr($request->getRequestUri(),10);
 
         $productID = Mage::getModel('catalog/product')->getIdBySku($sku);
-        $product = Mage::getModel('catalog/product')->loadByAttribute('sku',$sku);
-        echo $product->getName()."<br>";
-        echo "<img src='".$product->getImageUrl()."' />";
-        die();
+//        $product = Mage::getModel('catalog/product')->loadByAttribute('sku',$sku);
+//        echo $product->getName()."<br>";
+//        echo "<img src='".$product->getImageUrl()."' />";
+//        die();
 
 
         $request->setModuleName('catalog')

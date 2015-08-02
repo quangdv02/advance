@@ -2,3 +2,4 @@
 var/
 media/
 app/etc/local.xml
+errors/
