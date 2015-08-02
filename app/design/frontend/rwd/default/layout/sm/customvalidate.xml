@@ -1,0 +1,7 @@
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/sm/custom_validate.js</name></action>
+        </reference>
+    </default>
+</layout>
