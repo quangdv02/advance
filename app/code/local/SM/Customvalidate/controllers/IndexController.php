@@ -2,7 +2,10 @@
 class SM_Customvalidate_IndexController extends Mage_Core_Controller_Front_Action{
 
     public function indexAction(){
-        echo "test";
+        $customer = Mage::getModel('customer/customer');
+        $customer->setWebsiteId(Mage::app()->getWebsite()->getId());
+        $customer->loadByEmail('janedoe@example.com');
+        var_dump($customer->getId());
     }
 
     public function checkExistEmailAction(){
@@ -10,11 +13,11 @@ class SM_Customvalidate_IndexController extends Mage_Core_Controller_Front_Actio
         $websiteId = Mage::app()->getWebsite()->getId();
         $email = $this->getRequest()->getParam('email');
         $customer = Mage::getModel('customer/customer');
+        $customer->setWebsiteId($websiteId);
         $customer->loadByEmail($email);
-        echo $customer->getId();die;
         if ($customer->getId()) {
             $bool = 1;
         }
-        $this->getResponse()->setBody(Zend_Json::encode($bool));
+        $this->getResponse()->setBody($bool);
     }
 }
