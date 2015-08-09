@@ -1,0 +1,9 @@
+<layout>
+
+    <vendor_index_index>
+        <block type="vendor/vendor" name="root" template="sm/vendor/list.phtml"/>
+    </vendor_index_index>
+    <vendor_index_view>
+        <block type="vendor/vendor" name="root" template="sm/vendor/view.phtml"/>
+    </vendor_index_view>
+</layout>

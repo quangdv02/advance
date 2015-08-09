@@ -1,0 +1,17 @@
+<?php
+$vendors = $this->getVendors();
+?>
+<table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>description</th>
+    </tr>
+    <?php foreach($vendors as $vendor): ?>
+        <tr>
+            <td><?php echo $vendor['vendor_id'] ?></td>
+            <td><a href="<?php echo Mage::getBaseUrl().'vendor/index/view/id/'.$vendor['vendor_id'] ?>"><?php echo $vendor['name'] ?></a></td>
+            <td><?php echo $vendor['description'] ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>

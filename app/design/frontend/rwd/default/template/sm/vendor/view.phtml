@@ -1,0 +1,18 @@
+<?php
+$products = $this->getProductsByVendor();
+?>
+<table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>sku</th>
+    </tr>
+    <?php foreach($products as $product): ?>
+        <tr>
+            <td><?php echo $product->getId() ?></td>
+            <td><?php echo $product->getName() ?></td>
+            <td><?php echo $product->getSku() ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+<a href="<?php echo Mage::getBaseUrl().'vendor' ?>">Back</a>
