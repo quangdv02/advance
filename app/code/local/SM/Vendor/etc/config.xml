@@ -57,4 +57,15 @@
             </updates>
         </layout>
     </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <SM_Vendor after="Mage_Adminhtml">SM_Vendor_Adminhtml</SM_Vendor>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>

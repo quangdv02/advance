@@ -1,0 +1,33 @@
+<config>
+    <sections>
+        <sm_vendor>
+            <label>Config Vendor</label>
+            <sort_order>9000</sort_order>
+            <tab>sales</tab>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <frontend_type>text</frontend_type>
+            <groups>
+                <general>
+                    <label>General</label>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <show_all>
+                            <label>Show all</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_all>
+                    </fields>
+                </general>
+            </groups>
+        </sm_vendor>
+    </sections>
+</config>

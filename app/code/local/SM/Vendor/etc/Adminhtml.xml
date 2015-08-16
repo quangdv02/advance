@@ -1,0 +1,52 @@
+<config>
+    <menu>
+        <sales>
+            <children>
+                <vendor_options>
+                    <title>Vendor</title>
+                    <sort_order>0</sort_order>
+                    <children>
+                        <vendor_manager>
+                            <title>Manage Vendor</title>
+                            <sort_order>0</sort_order>
+                            <action>adminhtml/vendor</action>
+                        </vendor_manager>
+                        <vendor_setting>
+                            <title>Setting</title>
+                            <sort_order>1</sort_order>
+                            <action>adminhtml/system_config/edit/section/sm_vendor</action>
+                        </vendor_setting>
+                    </children>
+                </vendor_options>
+            </children>
+        </sales>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <sales>
+                        <children>
+                            <vendor_options>
+                                <title>Manage Vendor</title>
+                                <sort_order>0</sort_order>
+                            </vendor_options>
+                        </children>
+                    </sales>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <sm_vendor>
+                                        <title>Config vendor</title>
+                                        <sort_order>0</sort_order>
+                                    </sm_vendor>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
